@@ -7,7 +7,7 @@ use Exporter ();
 package Devel::StrictMode;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 our @ISA       = qw( Exporter );
 our @EXPORT    = qw( STRICT );
 our @EXPORT_OK = qw( LAX );
@@ -119,7 +119,7 @@ pragmata.
    use Devel::StrictMode;
 
    use strict;
-   use warnings STRICT ? qw(all) : qw(FATAL all);
+   use warnings STRICT ? qw(FATAL all) : qw(all);
    
    no if STRICT, "bareword::filehandles";
    no if STRICT, "autovivification";

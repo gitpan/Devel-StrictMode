@@ -23,7 +23,7 @@ my $meta = {
                         test      => { requires => { "Test::More" => 0.47 } },
                       },
   "provides"       => {
-                        "Devel::StrictMode" => { file => "lib/Devel/StrictMode.pm", version => 0.001 },
+                        "Devel::StrictMode" => { file => "lib/Devel/StrictMode.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -34,7 +34,7 @@ my $meta = {
                         license      => ["http://dev.perl.org/licenses/"],
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Devel-StrictMode/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;
