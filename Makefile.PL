@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "determine whether strict (but slow) tests should be enabled",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,12 +18,11 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
-                        runtime   => { requires => { perl => 5.006 } },
-                        test      => { requires => { "Test::More" => 0.47 } },
+                        runtime => { requires => { perl => 5.006 } },
+                        test => { requires => { "Test::More" => 0.47 } },
                       },
   "provides"       => {
-                        "Devel::StrictMode" => { file => "lib/Devel/StrictMode.pm", version => 0.002 },
+                        "Devel::StrictMode" => { file => "lib/Devel/StrictMode.pm", version => 0.003 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -32,9 +31,14 @@ my $meta = {
                                         },
                         homepage     => "https://metacpan.org/release/Devel-StrictMode",
                         license      => ["http://dev.perl.org/licenses/"],
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Devel-StrictMode/project",
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-devel-strictmode.git",
+                                          web  => "https://github.com/tobyink/p5-devel-strictmode",
+                                        },
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Devel-StrictMode/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;
